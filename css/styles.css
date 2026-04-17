@@ -15,21 +15,35 @@ header {
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    min-height: 200px;
+    min-height: 150px;
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: center;
+    gap: 80rem;
 }    
 
 .logo {
-    height: 10rem;
+    height: 8rem;
     width: auto;
 }
+
+li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.enlaces  {
+    color: white;
+    padding: 2rem;
+    list-style: none;
+}
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.6rem;
-    background-color: rgb(238, 207, 245);
+    background-color: rgb(249, 246, 250);
 }
 
 main {
@@ -57,7 +71,7 @@ main {
 footer {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row; /* Pone el <nav> arriba y el <p> abajo */
+    flex-direction: row; 
     justify-content: center; /* Centra verticalmente el contenido */
     align-items: center;    /* Centra horizontalmente todo el contenido */
     background-color: #f0f0f0; /* Opcional: solo para ver el área */
@@ -128,46 +142,64 @@ a {
     cursor: pointer;
 }
 
+/* -----------------------------------------------------------------*/
+/*                             CONTACTO                             */
+/* -----------------------------------------------------------------*/
 
-
-
-
-
-
-
-/*
-.btn {
-    border: none;
-    width: 100px;
-    height: auto;
-    padding: 2px;
-    background-color: darkcyan;
-    font-size: 2rem;
-    margin-left: 4px;
+.contacto {
+ justify-content: center;
 
 }
 
-form {
-    margin: 10px;
+.form-container {
+    background-color: rgb(250, 206, 251);
+    width: 40rem; 
+    margin: auto; 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
 }
 
 label {
-    margin-bottom: 2px;
-}
+    display: block; 
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #222;
+    text-align: left;
+    }
 
-input {
-    border: 2px;
-    border-radius: 4px;
-    width: 100px;
-    height: auto;
-
+input, textarea {
+    display: flex;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    width: 100%;
+    height: 4rem;
+    border: solid;
+    border-radius: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    justify-content: center;
 }
 
 textarea {
-    border: 2px;
-    border-radius: 4px;
-    width: 100px;
-    height: auto;
-
+    height: 14rem;
 }
-*/
+
+.btn {
+    display: flex;
+    background-color: #7a028c;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
+
+

@@ -7,22 +7,45 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <h1>Contacto</1>
+        <header>
+        <div class="div-logo"><a href="../index.html"> 
+            <img class="logo" src= "../images/BienBebidos.png" alt = "logo de la tienda"></a></div>
 
-        <form action = "https://formspree.io/f/xpqobgwy" mailto: "seoaneld@hotmail.com" method = "POST">
-        <label>Nombre:
-            <input type="text" name="nombre" required>
-        </label><br>
+        <ul>
+            <li><a class = "enlaces" href="../index.html">Home 🏡</a></li>
+            <li><a class = "enlaces" href="./pages/contacto.html">Contacto 📨</a></li>
+        </ul>
+    </header>
 
-        <label>E-mail:
-            <input type="email" name="email" required>
-        </label><br>
+    <main>
+    <h1 class = "contacto">Formulario de contacto</h1>
 
-        <label>Mensaje:
-            <textarea name = "mensaje" required></textarea>
-        </label><br>
-        
-        <button class="btn" type="submit">Enviar</button>
-    </form>
+        <div class="form-container">
+                
+            <section>
+                
+                <form action = "https://formspree.io/f/xpqobgwy" mailto: "seoaneld@hotmail.com" method = "POST">
+                
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required>
+                
+
+                <label>E-mail:</label>
+                <input type="email" name="email" required>
+                
+
+                <label>Mensaje:</label>
+                <textarea name = "mensaje" required></textarea>
+                
+               
+                            
+                <button class="btn" type="submit">Enviar</button>
+                </form>
+            
+            </section> 
+
+                
+        </div>
+    </main>
 </body>
 </html>
