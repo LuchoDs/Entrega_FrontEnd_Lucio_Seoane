@@ -69,12 +69,16 @@ ul {
 
 main {
     display: flex;
-    width: 90%;
     flex-direction: column;
+    flex: 1;
+    width: 80%;
     flex-wrap: wrap;
     margin: 0 auto;
     align-items: center;
+    margin-bottom: 15rem;
+
 }
+
 .titulo-productos, .parrafo {
     background-color:#d53963f3;
 }
@@ -115,7 +119,6 @@ h2 {
 
 .contenedor-tarjetas {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap; /* Para que las tarjetas bajen a la siguiente línea */
     justify-content: center;
     gap: 2rem;
@@ -166,6 +169,7 @@ footer {
     display: flex;
     justify-content:space-around;
     align-items: center;    /* Para centra horizontalmente todo el contenido */
+    flex-direction: row-reverse;
     padding: 0 4rem;
 }
 
@@ -208,6 +212,7 @@ a, .leyenda {
 }
 
 .bg-secondary {
+    background-color: antiquewhite;
     padding: 0.8rem;
     font-size: 1.5rem;
 }
@@ -271,8 +276,6 @@ textarea {
     padding-top: 1rem;
     resize: vertical; /* Impide que se estire hacia los lados y ensanche el rosa */
 }
-
-
 
 .bg-primary {
     margin-top: 1.5rem;
